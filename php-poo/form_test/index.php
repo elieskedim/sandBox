@@ -1,6 +1,7 @@
 <?php
 require_once('class/Bdd.class.php'); 
 require_once('class/Form.class.php');
+require_once('class/FormManager.class.php');
 ?>
 <!DOCTYPE html>
 <html>
@@ -8,17 +9,27 @@ require_once('class/Form.class.php');
 	<meta charset="utf-8">
 	<title>Formulaire poo php</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
 	<div id="contenu">
 		<h1>Formulaire PHP POO</h1>
 		<?php
 			$form = new Form;
+			$manager = new FormManager;
 			if(!empty($_POST)){
-				$form->controle($_POST);
+				$tabControle = $manager->controle($_POST);
+				/* echo "<pre>";
+					print_r($tabControle);
+				echo "</pre>"; */
+
 				$bdd = new Bdd('formulaire', 'localhost', '', 'root');
+				//var_dump($bdd->pdo);
+
+				
+				$manager->ajoutBdd($bdd->pdo, $tabControle);
 			}
-			$tab = ['fraise', 'poire', 'melon'];
+			
 		?>
 		<form method="post" action="">
 			<?php
@@ -44,5 +55,9 @@ require_once('class/Form.class.php');
 			?>
 		</form>
 	</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>

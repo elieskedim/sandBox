@@ -4,6 +4,7 @@ class Bdd{
 	private $host;
 	private $pass;
 	private $user;
+	public $pdo;
 
 	public function __construct($dbname, $host, $pass, $user){
 		$this->setDbname($dbname);
@@ -11,13 +12,12 @@ class Bdd{
 		$this->setPass($pass);
 		$this->setUser($user);
 
-		echo "Le nom de la bdd est : " . $this->getDbname() . "<br>";
+		/* echo "Le nom de la bdd est : " . $this->getDbname() . "<br>";
 		echo "Le host de la bdd est : " . $this->getHost() . "<br>";
 		echo "Le password de la bdd est : " . $this->getPass() . "<br>";
-		echo "Le user de la bdd est : " . $this->getUser() . "<br>";
+		echo "Le user de la bdd est : " . $this->getUser() . "<br>"; */
 
-		$pdo = new PDO("mysql:host=\"" . $this->getHost() . "\";dbname=\"" . $this->getDbname() . "\"", $this->getUser() , $this->getPass(), array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING, PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES UTF8"));
-
+		$this->pdo = new PDO("mysql:host=" . $this->getHost(). ";dbname=" .$this->getDbname(), $this->getUser(), $this->getPass(), array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING, PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES UTF8"));
 	}
 
 	private function setDbname($name){

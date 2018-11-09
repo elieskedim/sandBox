@@ -34,6 +34,7 @@ class FormManager{
             $_SESSION['membre']['email'] = $tab['email'];
             
             header('Location:view/profil.php');
+            exit();
         }else{
             echo "Une érreur est survenu lors de l'ajour en base de donnée.";
             return;

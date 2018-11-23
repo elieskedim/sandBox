@@ -1,15 +1,69 @@
 body{
-    background-color: #3b4964;
+    background-color: #2D487D;
 }
 .logo{
     height: 200px;
     width: 200px;
 }
-#img {
-  -moz-transform: scaleX(-1);
-        -o-transform: scaleX(-1);
-        -webkit-transform: scaleX(-1);
-        transform: scaleX(-1);
-        filter: FlipH;
-        -ms-filter: "FlipH"; 
+#galerie img:hover{
+    cursor: pointer;
+}
+.modal{
+    position: fixed;
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(100, 99, 104, 0.9);
+    display: none;
+}
+#close1:hover{
+    cursor:pointer;
+}
+.bodyModal{
+    padding: 20px;
+    background-color: white;
+    width: 70%;
+    margin: 50px auto;
+    overflow: auto;
+    height: 90%;
+    margin-bottom: 30px;
+}
+#media img{
+    border: 5px solid #3b4964;
+}
+.test{
+    border-radius: 50px;
+    box-shadow: 5px 3px 3px black;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  height: 150px;
+  background-color: #3b4964;
+  box-shadow: 10px 15px #3b4964;
+  margin: 10px;
+  float: left;
+  transition: all 0.25s ease-out;
+
+}
+.clear{
+    clear: both;
+}
+#panda {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+}
+svg {
+    visibility:hidden;
+}
+#panda{
+    height: 50%;
 }

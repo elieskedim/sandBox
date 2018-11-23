@@ -1,0 +1,16 @@
+{% extends 'layout.twig' %}
+
+{% block head %}
+    <title>Home</title>
+{% endblock %}
+
+{% block content %}
+    <h1>Les derniers tutoriels</h1>
+
+    {{ dump(data.nom) }}
+    <ul>
+        {% for datas in data %}
+            <li> {{ data.nom }} </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

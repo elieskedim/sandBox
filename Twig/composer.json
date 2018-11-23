@@ -1,0 +1,12 @@
+{
+    "name": "sandbox/twig",
+    "authors": [
+        {
+            "name": "elies",
+            "email": "elieskedim23@gmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^2.0"
+    }
+}

@@ -78,7 +78,7 @@
 <section id="media" class="mt-5 mb-5 container-fluid">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-5 bg-white ml-2 pb-5 test">
+            <div class="col-md-5 bg-white pb-5 test">
                 <h2 class="text-center mb-5">Film/Séries</h2>
                 <div class="text-center">
                     <img width="100px;" class="" src="img/film/fb2.jpg" alt="">
@@ -88,17 +88,17 @@
                     <img width="100px;" height="137px;" class="ml-md-3" src="img/film/nonne.jpg" alt="">
                 </div>
             </div>
-            <div class="text-center col mt-1">
+            <div class="text-center col-md-2 mt-1">
                 <img class="logo" src="img/lvlup.png" alt="">
             </div>
-            <div class="col-md-5 bg-white ml-5 pb-5 test">
+            <div class="col-md-5 bg-white pb-5 test">
                 <h2 class="text-center mb-5">Jeux</h2>
                 <div class="text-center">
-                    <img width="100px;" height="137px;" class="ml-md-3" src="img/games/reddead.jpg" alt="">
-                    <img width="100px;" height="137px;" class="ml-md-3" src="img/games/civ.jpg" alt="">
-                    <img width="100px;" height="137px;" class="ml-md-3" src="img/games/divinity.jpg" alt="">
-                    <img width="100px;" height="137px;" class="ml-md-3" src="img/games/wow.jpg" alt="">
-                    <img width="100px;" height="137px;" class="ml-md-3" src="img/games/spiderman.jpg" alt="">
+                    <img width="100px;" height="137px;"  src="img/games/reddead.jpg" alt="">
+                    <img width="100px;" height="137px;"  src="img/games/civ.jpg" alt="">
+                    <img width="100px;" height="137px;"  src="img/games/divinity.jpg" alt="">
+                    <img width="100px;" height="137px;"  src="img/games/wow.jpg" alt="">
+                    <img width="100px;" height="137px;"  src="img/games/spiderman.jpg" alt="">
                 </div>
             </div>
         </div>

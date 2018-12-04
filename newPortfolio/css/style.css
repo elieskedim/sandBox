@@ -1,5 +1,16 @@
 body{
     background-color: #2D487D;
+         
+
+    font-family: 'Open Sans', sans-serif;
+
+}
+h1, h2, h3{
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    font-size: 3.9em;
+    
 }
 .logo{
     height: 200px;
@@ -14,7 +25,7 @@ body{
     left:0;
     height: 100%;
     width: 100%;
-    background-color: rgba(100, 99, 104, 0.9);
+    background-color: white;
     display: none;
 }
 #close1:hover{
@@ -53,17 +64,78 @@ body{
 .clear{
     clear: both;
 }
-#panda {
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    margin:0;
-    padding:0;
-    overflow:hidden;
+#media .logo{
+    border: none;
 }
-svg {
-    visibility:hidden;
+#form{
+    height: 550px;
+    border-radius: 5%;
+    background-color: #3b4964;
+    
+    box-shadow: 2px 5px 8px 4px black;
 }
-#panda{
-    height: 50%;
+#form i{
+    font-size: 2.9em;
+    
+}
+aside{
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    right: 15px;
+    border-radius: 100%;
+    z-index: 100;
+    background-color: #3b4964;
+    box-shadow: 2px 5px 8px 4px black;
+}
+aside i{
+    font-size: 2.8em;
+    color: white;
+}
+aside:hover{
+    cursor: pointer;
+}
+footer{
+    height: 50px;
+}
+
+/* Morph */
+.morph div img {
+  -webkit-filter: grayscale(0) blur(0px);
+  filter: grayscale(0) blur(0px);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+ 
+.morph div img:hover  {
+  border-radius: 50%;  /* on arrondit l'image */
+  -webkit-transform: rotate(360deg); /* rotation de l'image */
+  transform: rotate(360deg);
+  cursor: pointer;
+}
+
+#media a{
+     color:#ccc;
+     text-shadow:0 -1px 0 black;                
+}
+#media a:hover,a:focus{
+     background:rgba(0,0,0,.4);
+     box-shadow:0 1px 0 rgba(255,255,255,.4);
+}
+#media a span{
+     position:absolute;
+      margin-top:23px;
+     margin-left:-35px;
+     color:#09c;
+     background:rgba(0,0,0,.9);
+     padding:15px;
+     border-radius:3px;
+     box-shadow:0 0 2px rgba(0,0,0,.5);
+     transform:scale(0) rotate(-12deg);     
+     transition:all .25s;
+     opacity:0;  
+}
+#media a:hover span, a:focus span{
+     transform:scale(1) rotate(0);   
+     opacity:1;     
 }

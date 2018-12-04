@@ -111,6 +111,7 @@
                 <img class="logo" src="img/lvlup.png" alt="">
             </div>
             <div class="col-md-5 bg-white pb-5 test">
+<<<<<<< HEAD
                 <h2 class="text-center mb-5">Dériner Jeux</h2>
                 <div class="text-center">
                     <a href="">
@@ -133,6 +134,15 @@
                         <img width="100px;" height="137px;"  src="img/games/spiderman.jpg" alt="">
                         <span>J'aime bien se jeux </span>
                     </a>
+=======
+                <h2 class="text-center mb-5">Jeux</h2>
+                <div class="text-center">
+                    <img width="100px;" height="137px;"  src="img/games/reddead.jpg" alt="">
+                    <img width="100px;" height="137px;"  src="img/games/civ.jpg" alt="">
+                    <img width="100px;" height="137px;"  src="img/games/divinity.jpg" alt="">
+                    <img width="100px;" height="137px;"  src="img/games/wow.jpg" alt="">
+                    <img width="100px;" height="137px;"  src="img/games/spiderman.jpg" alt="">
+>>>>>>> a5662dbe64fde652761aa9a8c4f3c8a1b68db305
                 </div>
             </div>
         </div>
